@@ -1,0 +1,23 @@
+{
+  "name": "remote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inndex.html",
+  "scripts": {
+    "build-win": "rmdir /s dist && webpack copy index.html dist",
+    "build": "rm -rf dist && webpack && cp -v index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/MakerDrive/remote.git"
+  },
+  "author": "Vladimir Matiyasevich",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/MakerDrive/remote#readme",
+  "devDependencies": {
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-obfuscator": "^0.16.0"
+  }
+}
